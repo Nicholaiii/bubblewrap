@@ -1,7 +1,11 @@
 # Discord Bubblewrap
 
-||D||e||l||i||c||i||o||u||s|| ||B||u||b||b||l||e||w||r||a||p|| ||f||o||r|| ||D||i||s||c||o||r||d||
+### 🔗 [bubblewrap.nuxt.dev](https://bubblewrap.nuxt.dev)
 
+<details>
+  <summary>Delicious Bubblewrap for Discord</summary>
+||D||||e||||l||||i||||c||||i||||o||||u||||s|||| ||||B||||u||||b||||b||||l||||e||||w||||r||||a||||p|||| ||||f||||o||||r|||| ||||D||||i||||s||||c||||o||||r||||d||
+</details>
 
 ## Features
 
