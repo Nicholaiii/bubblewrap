@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const source = ref('')
 const { copy, copied, isSupported } = useClipboard({ source })
-const bubblewrap = (text: string): string => text === '' ? '' : '||' + text.split('').join('||') + '||'
+const bubblewrap = (text: string): string => text === '' ? '' : '||' + text.split('').join('||||') + '||'
 </script>
 
 <template>
