@@ -33,6 +33,9 @@ importers:
         specifier: ^4.5.0
         version: 4.5.0(vue@3.5.13(typescript@5.7.3))
     devDependencies:
+      '@iconify-json/lucide':
+        specifier: ^1.2.24
+        version: 1.2.24
       '@nuxt/eslint-config':
         specifier: ^0.7.5
         version: 0.7.5(@vue/compiler-sfc@3.5.13)(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
@@ -1074,6 +1077,9 @@ packages:
 
   '@iconify-json/heroicons@1.2.2':
     resolution: {integrity: sha512-qoW4pXr5kTTL6juEjgTs83OJIwpePu7q1tdtKVEdj+i0zyyVHgg/dd9grsXJQnpTpBt6/VwNjrXBvFjRsKPENg==}
+
+  '@iconify-json/lucide@1.2.24':
+    resolution: {integrity: sha512-MZ61WEAMlVaM3BkuZR4vVw63hPVdaeF5KQEogLcy5qh+zCXLcSpKOyMyoylSTnYUlcKsqTeBsUzRxPsvxe+P3g==}
 
   '@iconify/collections@1.0.510':
     resolution: {integrity: sha512-3+R+IUTtcTbuZ6Lwh/m14Jxag/0Y7in0LGBvhRKNGrcJ8UmEgUVt//flvMkAFiVPainSNokytWVCzrWz3hCVwA==}
@@ -6650,6 +6656,10 @@ snapshots:
   '@humanwhocodes/retry@0.4.1': {}
 
   '@iconify-json/heroicons@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/lucide@1.2.24':
     dependencies:
       '@iconify/types': 2.0.0
 

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 useHead({
   title: 'Bubblewrap Discord',
   link: [
@@ -9,6 +9,7 @@ useHead({
     class: 'dark',
   },
 })
+
 </script>
 
 <template>
