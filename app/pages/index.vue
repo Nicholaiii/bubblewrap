@@ -5,7 +5,7 @@ const bubblewrap = (text: string): string => text === '' ? '' : '||' + text.spli
 </script>
 
 <template>
-  <div class="grid grid-cols-6 py-2 justify-items-stretch">
+  <div class="grid grid-cols-6 py-2 justify-items-stretch text-zinc-200 ">
     <h1 class="col-span-6 md:col-span-2 md:col-start-3 text-4xl py-4">
       <span v-for="letter, key in 'BUBBLEWRAP'.split('')" :key class="bg-zinc-800 rounded-xl px-2">{{ letter }}</span>
     </h1>
@@ -26,7 +26,7 @@ const bubblewrap = (text: string): string => text === '' ? '' : '||' + text.spli
       <span class="col-span-6 md:col-span-2" />
 
       <div class="col-span-6 md:col-span-2 md:col-start-3">
-        <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-zinc-800 text-white rounded-lg p-4 pl-6">
+        <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-zinc-800 rounded-lg p-4 pl-6">
           <span class="flex gap-4">
             <span class="flex-1">
               <span>
@@ -39,15 +39,17 @@ const bubblewrap = (text: string): string => text === '' ? '' : '||' + text.spli
             icon="i-lucide-clipboard-copy"
             size="sm"
             color="rose"
-            square
-            :variant="copied ? 'ghost' : 'outline'"
+            variant="outline"
             class="shrink-0"
             @click="copy(bubblewrap(source))"
           >{{ copied ? 'Copied!' : '&nbsp;Copy&nbsp;' }}</UButton>
         </code>
       </div>
       <span class="col-span-6 md:col-span-2 py-2" />
-      <span v-if="!isSupported">Clipboard API is not supported. Copy it yourself</span>
+      <span v-if="!isSupported" class="col-span-6">Clipboard API is not supported. Copy it yourself</span>
     </template>
+    <span class="col-span-6 md:col-span-2 md:col-start-3 py-2 text-zinc-600 text-lg">
+      xoxo <UIcon name="i-lucide-heart" class="w-5 h-5" />  <NuxtLink to="https://nicholai.dev" external class="font-bold underline">nicholai.dev</NuxtLink>
+    </span>
   </div>
 </template>
